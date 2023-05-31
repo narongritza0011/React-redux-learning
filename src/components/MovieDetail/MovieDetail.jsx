@@ -29,7 +29,13 @@ const MovieDetail = () => {
           <div className="movie-detail-img">
             <img src={movie.Poster} alt="" />
           </div>
-          <div className="movie-detail-info"></div>
+          <div className="movie-detail-info">
+            <h3>{movie.Title}</h3>
+            <p style={{ margin: "2rem 0" }}>{movie.Plot}</p>
+            <div>
+              <strong>Released : {movie.Released}</strong>
+            </div>
+          </div>
         </div>
       ) : (
         <h4>Loading...</h4>
